@@ -1,6 +1,6 @@
-package monothon.bear.repository;
+package monothon.echo.repository;
 
-import monothon.bear.entity.User;
+import monothon.echo.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

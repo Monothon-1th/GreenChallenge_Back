@@ -1,13 +1,13 @@
-package monothon.bear;
+package monothon.echo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BearApplication {
+public class EchoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BearApplication.class, args);
+		SpringApplication.run(EchoApplication.class, args);
 	}
 
 }

@@ -1,4 +1,4 @@
-package monothon.bear.entity;
+package monothon.echo.entity;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -9,20 +9,21 @@ import javax.persistence.*;
 @Entity
 @Getter
 @NoArgsConstructor
-public class User {
+public class Participate {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false, unique = true)
-    private String loginId;
+    @Column(nullable = false)
+    private Long userId;
 
     @Column(nullable = false)
-    private String password;
+    private Long challengeId;
+
 
     @Builder
-    public User(String loginId, String password) {
-        this.loginId = loginId;
-        this.password = password;
+    public Participate(Long userId, Long challengeId) {
+        this.userId = userId;
+        this.challengeId = challengeId;
     }
 }
